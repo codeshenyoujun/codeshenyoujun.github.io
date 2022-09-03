@@ -1,150 +1,594 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>归档 | 神游君的小站</title><meta name="author" content="神游君"><meta name="copyright" content="神游君"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="如果你交给某人一个程序，你将折磨他一整天；如果你教某人如何编写程序，你将折磨他一辈子。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="归档">
-<meta property="og:url" content="http://codeshenyoujun.github.io/archives/index.html">
-<meta property="og:site_name" content="神游君的小站">
-<meta property="og:description" content="如果你交给某人一个程序，你将折磨他一整天；如果你教某人如何编写程序，你将折磨他一辈子。">
-<meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://www.helloimg.com/image/RHN4oY">
-<meta property="article:author" content="神游君">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://www.helloimg.com/image/RHN4oY"><link rel="shortcut icon" href="C:\GitHub\Jason20091226.github.io\themes\butterfly\source\img\favicon.jpg"><link rel="canonical" href="http://codeshenyoujun.github.io/archives/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
-  root: '/',
-  algolia: undefined,
-  localSearch: undefined,
-  translate: undefined,
-  noticeOutdate: undefined,
-  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
-  copy: {
-    success: '复制成功',
-    error: '复制错误',
-    noSupport: '浏览器不支持'
-  },
-  relativeDate: {
-    homepage: false,
-    post: false
-  },
-  runtime: '',
-  date_suffix: {
-    just: '刚刚',
-    min: '分钟前',
-    hour: '小时前',
-    day: '天前',
-    month: '个月前'
-  },
-  copyright: undefined,
-  lightbox: 'fancybox',
-  Snackbar: undefined,
-  source: {
-    justifiedGallery: {
-      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
-      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
-    }
-  },
-  isPhotoFigcaption: false,
-  islazyload: false,
-  isAnchor: false
-}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
-  title: '归档',
-  isPost: false,
-  isHome: false,
-  isHighlightShrink: false,
-  isToc: false,
-  postUpdate: '2022-08-26 20:47:41'
-}</script><noscript><style type="text/css">
-  #nav {
-    opacity: 1
-  }
-  .justified-gallery img {
-    opacity: 1
-  }
 
-  #recent-posts time,
-  #post-meta time {
-    display: inline !important
-  }
-</style></noscript><script>(win=>{
-    win.saveToLocal = {
-      set: function setWithExpiry(key, value, ttl) {
-        if (ttl === 0) return
-        const now = new Date()
-        const expiryDay = ttl * 86400000
-        const item = {
-          value: value,
-          expiry: now.getTime() + expiryDay,
-        }
-        localStorage.setItem(key, JSON.stringify(item))
-      },
-
-      get: function getWithExpiry(key) {
-        const itemStr = localStorage.getItem(key)
-
-        if (!itemStr) {
-          return undefined
-        }
-        const item = JSON.parse(itemStr)
-        const now = new Date()
-
-        if (now.getTime() > item.expiry) {
-          localStorage.removeItem(key)
-          return undefined
-        }
-        return item.value
-      }
-    }
-  
-    win.getScript = url => new Promise((resolve, reject) => {
-      const script = document.createElement('script')
-      script.src = url
-      script.async = true
-      script.onerror = reject
-      script.onload = script.onreadystatechange = function() {
-        const loadState = this.readyState
-        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
-        script.onload = script.onreadystatechange = null
-        resolve()
-      }
-      document.head.appendChild(script)
-    })
-  
-      win.activateDarkMode = function () {
-        document.documentElement.setAttribute('data-theme', 'dark')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
-        }
-      }
-      win.activateLightMode = function () {
-        document.documentElement.setAttribute('data-theme', 'light')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
-        }
-      }
-      const t = saveToLocal.get('theme')
+<!DOCTYPE html>
+<html lang="zh-CN" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Archive</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="TriDiamond Obsidian,"> 
+    <meta name="description" content="如果你交给某人一个程序，你将折磨他一整天；如果你教某人如何编写程序，你将折磨他一辈子。,"> 
+    <meta name="author" content="神游君"> 
+    <link rel="alternative" href="atom.xml" title="神游君的小站" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
     
-          if (t === 'dark') activateDarkMode()
-          else if (t === 'light') activateLightMode()
-        
-      const asideStatus = saveToLocal.get('aside-status')
-      if (asideStatus !== undefined) {
-        if (asideStatus === 'hide') {
-          document.documentElement.classList.add('hide-aside')
-        } else {
-          document.documentElement.classList.remove('hide-aside')
-        }
-      }
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1429596_nzgqgvnmkjb.css">
+
     
-    const detectApple = () => {
-      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
-        document.documentElement.classList.add('apple')
-      }
-    }
-    detectApple()
-    })(window)</script><meta name="msvalidate.01" content="73BF3983B3C1E8A2A77F0B974DEDE349" /><meta name="generator" content="Hexo 6.2.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://www.helloimg.com/image/RHN4oY" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">16</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">10</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header" style="background-image: url('https://s2.loli.net/2022/04/21/jGFNnKo3hxQUgdi.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">神游君的小站</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="page-site-info"><h1 id="site-title">归档</h1></div></header><main class="layout" id="content-inner"><div id="archive"><div class="article-sort-title">文章总览 - 16</div><div class="article-sort"><div class="article-sort-item year">2022</div><div class="article-sort-item"><a class="article-sort-item-img" href="/2022/08/09/%E9%9F%B3%E9%A2%91%E6%B5%8B%E8%AF%95/" title="音频测试"><img src="https://s2.loli.net/2022/04/21/Ww9dOxpYksg3EHJ.png" alt="音频测试" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2022-08-09T02:10:50.504Z" title="发表于 2022-08-09 10:10:50">2022-08-09</time></div><a class="article-sort-item-title" href="/2022/08/09/%E9%9F%B3%E9%A2%91%E6%B5%8B%E8%AF%95/" title="音频测试">音频测试</a></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/2022/08/09/%E8%A3%85%E9%80%BC%E6%B8%B8%E8%AE%B0/" title="IOI 2021 - 游记"><img src="https://s2.loli.net/2022/04/21/Ww9dOxpYksg3EHJ.png" alt="IOI 2021 - 游记" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2022-08-09T02:10:50.501Z" title="发表于 2022-08-09 10:10:50">2022-08-09</time></div><a class="article-sort-item-title" href="/2022/08/09/%E8%A3%85%E9%80%BC%E6%B8%B8%E8%AE%B0/" title="IOI 2021 - 游记">IOI 2021 - 游记</a></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/2022/08/09/%E7%BB%9D%E5%AF%B9%E7%9A%84%E6%9A%B4%E5%8A%9B%EF%BC%81%EF%BC%81%EF%BC%81/" title="绝对的暴力"><img src="https://s2.loli.net/2022/04/21/Ww9dOxpYksg3EHJ.png" alt="绝对的暴力" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2022-08-09T02:10:50.498Z" title="发表于 2022-08-09 10:10:50">2022-08-09</time></div><a class="article-sort-item-title" href="/2022/08/09/%E7%BB%9D%E5%AF%B9%E7%9A%84%E6%9A%B4%E5%8A%9B%EF%BC%81%EF%BC%81%EF%BC%81/" title="绝对的暴力">绝对的暴力</a></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/2022/08/09/%E6%95%85%E5%AE%AB%E5%8D%9A%E7%89%A9%E9%99%A2-%E2%80%94%E2%80%94-%E5%A4%AA%E5%92%8C%E9%97%A8/" title="故宫博物院 —— 太和门"><img src="https://s2.loli.net/2022/04/21/Ww9dOxpYksg3EHJ.png" alt="故宫博物院 —— 太和门" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2022-08-09T02:10:50.494Z" title="发表于 2022-08-09 10:10:50">2022-08-09</time></div><a class="article-sort-item-title" href="/2022/08/09/%E6%95%85%E5%AE%AB%E5%8D%9A%E7%89%A9%E9%99%A2-%E2%80%94%E2%80%94-%E5%A4%AA%E5%92%8C%E9%97%A8/" title="故宫博物院 —— 太和门">故宫博物院 —— 太和门</a></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/2022/08/09/%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%BD%91%E7%AB%99/" title="从零开始建立一个网站"><img src="https://s2.loli.net/2022/04/21/Ww9dOxpYksg3EHJ.png" alt="从零开始建立一个网站" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2022-08-09T02:10:50.489Z" title="发表于 2022-08-09 10:10:50">2022-08-09</time></div><a class="article-sort-item-title" href="/2022/08/09/%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%BD%91%E7%AB%99/" title="从零开始建立一个网站">从零开始建立一个网站</a></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/2022/08/09/%E5%9D%91%E4%BA%BA/" title="做一个坑人小程序"><img src="https://s2.loli.net/2022/04/21/Ww9dOxpYksg3EHJ.png" alt="做一个坑人小程序" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2022-08-09T02:10:50.486Z" title="发表于 2022-08-09 10:10:50">2022-08-09</time></div><a class="article-sort-item-title" href="/2022/08/09/%E5%9D%91%E4%BA%BA/" title="做一个坑人小程序">做一个坑人小程序</a></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/2022/08/09/%E5%86%8D%E8%A7%81%E6%9E%81%E5%9F%9F/" title="用代码关闭极域电子教室"><img src="https://s2.loli.net/2022/04/21/Ww9dOxpYksg3EHJ.png" alt="用代码关闭极域电子教室" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2022-08-09T02:10:50.483Z" title="发表于 2022-08-09 10:10:50">2022-08-09</time></div><a class="article-sort-item-title" href="/2022/08/09/%E5%86%8D%E8%A7%81%E6%9E%81%E5%9F%9F/" title="用代码关闭极域电子教室">用代码关闭极域电子教室</a></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/2022/08/09/Windows11%E5%A3%81%E7%BA%B8/" title="Windows11 | 壁纸"><img src="https://s2.loli.net/2022/04/21/Ww9dOxpYksg3EHJ.png" alt="Windows11 | 壁纸" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2022-08-09T02:10:50.481Z" title="发表于 2022-08-09 10:10:50">2022-08-09</time></div><a class="article-sort-item-title" href="/2022/08/09/Windows11%E5%A3%81%E7%BA%B8/" title="Windows11 | 壁纸">Windows11 | 壁纸</a></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/2022/08/09/The%20video/" title="更新中 | 一度让我震惊到的视频！！！"><img src="https://s2.loli.net/2022/04/21/Ww9dOxpYksg3EHJ.png" alt="更新中 | 一度让我震惊到的视频！！！" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2022-08-09T02:10:50.478Z" title="发表于 2022-08-09 10:10:50">2022-08-09</time></div><a class="article-sort-item-title" href="/2022/08/09/The%20video/" title="更新中 | 一度让我震惊到的视频！！！">更新中 | 一度让我震惊到的视频！！！</a></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/2022/08/09/P1126/" title="洛谷《P1126》题解"><img src="https://s2.loli.net/2022/04/21/Ww9dOxpYksg3EHJ.png" alt="洛谷《P1126》题解" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2022-08-09T02:10:50.471Z" title="发表于 2022-08-09 10:10:50">2022-08-09</time></div><a class="article-sort-item-title" href="/2022/08/09/P1126/" title="洛谷《P1126》题解">洛谷《P1126》题解</a></div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://www.helloimg.com/image/RHN4oY" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">神游君</div><div class="author-info__description">如果你交给某人一个程序，你将折磨他一整天；如果你教某人如何编写程序，你将折磨他一辈子。</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">16</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">10</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/codeshenyoujun"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/08/09/%E9%9F%B3%E9%A2%91%E6%B5%8B%E8%AF%95/" title="音频测试"><img src="https://s2.loli.net/2022/04/21/Ww9dOxpYksg3EHJ.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="音频测试"/></a><div class="content"><a class="title" href="/2022/08/09/%E9%9F%B3%E9%A2%91%E6%B5%8B%E8%AF%95/" title="音频测试">音频测试</a><time datetime="2022-08-09T02:10:50.504Z" title="发表于 2022-08-09 10:10:50">2022-08-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/08/09/%E8%A3%85%E9%80%BC%E6%B8%B8%E8%AE%B0/" title="IOI 2021 - 游记"><img src="https://s2.loli.net/2022/04/21/Ww9dOxpYksg3EHJ.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="IOI 2021 - 游记"/></a><div class="content"><a class="title" href="/2022/08/09/%E8%A3%85%E9%80%BC%E6%B8%B8%E8%AE%B0/" title="IOI 2021 - 游记">IOI 2021 - 游记</a><time datetime="2022-08-09T02:10:50.501Z" title="发表于 2022-08-09 10:10:50">2022-08-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/08/09/%E7%BB%9D%E5%AF%B9%E7%9A%84%E6%9A%B4%E5%8A%9B%EF%BC%81%EF%BC%81%EF%BC%81/" title="绝对的暴力"><img src="https://s2.loli.net/2022/04/21/Ww9dOxpYksg3EHJ.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="绝对的暴力"/></a><div class="content"><a class="title" href="/2022/08/09/%E7%BB%9D%E5%AF%B9%E7%9A%84%E6%9A%B4%E5%8A%9B%EF%BC%81%EF%BC%81%EF%BC%81/" title="绝对的暴力">绝对的暴力</a><time datetime="2022-08-09T02:10:50.498Z" title="发表于 2022-08-09 10:10:50">2022-08-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/08/09/%E6%95%85%E5%AE%AB%E5%8D%9A%E7%89%A9%E9%99%A2-%E2%80%94%E2%80%94-%E5%A4%AA%E5%92%8C%E9%97%A8/" title="故宫博物院 —— 太和门"><img src="https://s2.loli.net/2022/04/21/Ww9dOxpYksg3EHJ.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="故宫博物院 —— 太和门"/></a><div class="content"><a class="title" href="/2022/08/09/%E6%95%85%E5%AE%AB%E5%8D%9A%E7%89%A9%E9%99%A2-%E2%80%94%E2%80%94-%E5%A4%AA%E5%92%8C%E9%97%A8/" title="故宫博物院 —— 太和门">故宫博物院 —— 太和门</a><time datetime="2022-08-09T02:10:50.494Z" title="发表于 2022-08-09 10:10:50">2022-08-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/08/09/%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%BD%91%E7%AB%99/" title="从零开始建立一个网站"><img src="https://s2.loli.net/2022/04/21/Ww9dOxpYksg3EHJ.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="从零开始建立一个网站"/></a><div class="content"><a class="title" href="/2022/08/09/%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%BD%91%E7%AB%99/" title="从零开始建立一个网站">从零开始建立一个网站</a><time datetime="2022-08-09T02:10:50.489Z" title="发表于 2022-08-09 10:10:50">2022-08-09</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
-            <i class="fas fa-folder-open"></i>
-            <span>分类</span>
-            <a class="card-more-btn" href="/categories/" title="查看更多">
-    <i class="fas fa-angle-right"></i></a>
+<link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.7.2/animate.min.css">
+
+    
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+
+    
+<link rel="stylesheet" href="//cdn.bootcss.com/codemirror/5.48.4/codemirror.min.css">
+
+    
+<link rel="stylesheet" href="//cdn.bootcss.com/codemirror/5.48.4/theme/dracula.css">
+
+    
+<link rel="stylesheet" href="/css/obsidian.css">
+
+    
+<link rel="stylesheet" href="/css/ball-atom.min.css">
+
+    
+    
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+
+    
+    <script>var musiclist = ""</script>
+    
+<script src="/js/loadaplayer.js"></script>
+
+    <!-- 引用依赖 -->
+    
+<link rel="stylesheet" href="/aplayer/dist/APlayer.min.css">
+
+    
+<script src="/aplayer/dist/APlayer.min.js"></script>
+<script src="/js/Meting.min.js"></script>
+
+    
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+
+<body class="loading">
+    <div class="loader">
+        <div class="la-ball-atom la-2x">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <span id="config-title" style="display:none">神游君的小站</span>
+    <div id="loader"></div>
+    <div id="single" class="page">
+    <div id="top">
+        <a class="iconfont icon-left image-icon" href="javascript:history.back()"></a>
+    </div>
+    <div class="dark-obsidian section">
+        <div class="article animated fadeIn">
+            <div class="main">
+                <div class="content animated fadeIn">
+                    <div class="set">
+                        <h1 style="text-align: center">Archived</h1>
+                        <p style="text-align: center">「 16 」</p>
+                        <ul class="timeline timeline-centered">
+                            
+                            
+                                
+                                <li class="timeline-item period">
+                                    <div class="timeline-info"></div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <h2 class="timeline-title">八月 2022</h2>
+                                    </div>
+                                </li>
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">八月 09, 2022</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2022/08/09/%E9%9F%B3%E9%A2%91%E6%B5%8B%E8%AF%95/">音频测试</a>
+                                        <p>
+                                            
+      
+
+
+
+
+zhimaoi:戳这里
+
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">八月 09, 2022</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2022/08/09/%E8%A3%85%E9%80%BC%E6%B8%B8%E8%AE%B0/">IOI 2021 - 游记</a>
+                                        <p>
+                                            IOI 2020 - 游记DAY 0MIT 集训结束了，乘飞机飞往新加坡。在组委会的各种安排下，我神奇的和美国队队长 Benjianmin Pi 和俄罗斯队队长 lldar Ganullin 坐在了一起。
+从波士顿飞往新加坡需要 20 个小时的时间，飞机上太无聊，准备看电影。我们这一排只有我面前的电视是好的，而且只有意大利语电影。
+我觉得挺有趣，但他们俩都说看不懂。于是花 5 分钟出了十道联...
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">八月 09, 2022</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2022/08/09/%E7%BB%9D%E5%AF%B9%E7%9A%84%E6%9A%B4%E5%8A%9B%EF%BC%81%EF%BC%81%EF%BC%81/">绝对的暴力</a>
+                                        <p>
+                                            12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110...
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">八月 09, 2022</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2022/08/09/%E6%95%85%E5%AE%AB%E5%8D%9A%E7%89%A9%E9%99%A2-%E2%80%94%E2%80%94-%E5%A4%AA%E5%92%8C%E9%97%A8/">故宫博物院 —— 太和门</a>
+                                        <p>
+                                            
+时代：清康熙
+分类：殿
+区域：外朝中路
+　　太和殿，俗称“金銮殿”，位于紫禁城南北主轴线的显要位置，明永乐十八年（1420年）建成，称奉天殿。嘉靖四十一年（1562年）改称皇极殿。清顺治二年（1645年）改今名。自建成后屡遭焚毁，又多次重建，今天所见为清代康熙三十四年(1695年)重建后的形制。　　太和殿面阔11间, 进深5间，建筑面积2377.00㎡，高26.92m，连同台基通高35.0...
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">八月 09, 2022</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2022/08/09/%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%BD%91%E7%AB%99/">从零开始建立一个网站</a>
+                                        <p>
+                                            
+写给想要拥有一个自己的网站但没有资金成本的小白与曾经的自己。
+
+前言虽说是网站，对于个人来说，或许一般叫作博客。但我不希望它仅仅是一个博客，而是能够成为一个处于自己现实生活之外、自由、实验、不用畏惧他人眼光甚至可以独断专行的地方。
+当然，这本质还是一个新手向教程，也许会有点科普的感觉。我会从整体上对搭建网站的流程和使用到的技术及步骤进行介绍（因为要铺开讲，倘若包括轶事，实在太多太杂，我也会...
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">八月 09, 2022</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2022/08/09/%E5%9D%91%E4%BA%BA/">做一个坑人小程序</a>
+                                        <p>
+                                            做一个坑人小程序下载 DEV-C++下载链接：DEV-C++点击“码云(Gitee)” 或直接点这里
+安装DEV-C++打开下载下来的文件点击“确定”点击“我同意此协议”下一步一路点“确定”安装完成！！打开这个窗口就说明安装成功图示：
+注入灵魂(主题)上方菜单栏选择“工具”选择“编辑器选项”选择“语法高亮”拉出预设语法高亮方案滚动条滚下去……可以看到“塑型代码”点他点确定就变成这样：这是为了...
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">八月 09, 2022</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2022/08/09/%E5%86%8D%E8%A7%81%E6%9E%81%E5%9F%9F/">用代码关闭极域电子教室</a>
+                                        <p>
+                                            极域电子教室的困扰影响着很多小学僧下面我们一步解决！首先你得会用 cmd按下一组快捷键：win+r在对话框里输入：cmd按回车弹出这样的窗口：里面输入：
+1taskkill -f -im studentmain.exe
+这样就好了！！！原理是：用taskkill来结束极域学生端的.exe程序好好学习吧！zhimaoi博客：戳这里
+
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">八月 09, 2022</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2022/08/09/Windows11%E5%A3%81%E7%BA%B8/">Windows11 | 壁纸</a>
+                                        <p>
+                                            关于Windows11的一些壁纸
+拿去吧 拿去吧
+
+下载链接
+
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">八月 09, 2022</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2022/08/09/The%20video/">更新中 | 一度让我震惊到的视频！！！</a>
+                                        <p>
+                                            一度让我震惊到的视频何同学 
+
+毕导THU 
+
+
+内容更新中。。。
+
+
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">八月 09, 2022</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2022/08/09/P1126/">洛谷《P1126》题解</a>
+                                        <p>
+                                            洛谷《P1126》题解题面题目描述机器人移动学会（RMI）现在正尝试用机器人搬运物品。机器人的形状是一个直径1.6米的球。在试验阶段，机器人被用于在一个储藏室中搬运货物。储藏室是一个 N×M 的网格，有些格子为不可移动的障碍。机器人的中心总是在格点上，当然，机器人必须在最短的时间内把物品搬运到指定的地方。机器人接受的指令有：向前移动1步（Creep）；向前移动2步（Walk）；向前移动3步（...
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">八月 09, 2022</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2022/08/09/OJ/">有关oj运行机制的一点解释（持续更新。。。）</a>
+                                        <p>
+                                            很久以前就想专门写篇有关oj原理的博客了因为之前对电脑判题的原理有过质疑于是在极长的一段时间内妄想在网络上找到相关的解答后来在问老师问同学问博主问度娘一点一点解惑慢慢总结后大致覆盖了我目前的一些疑惑
+首先是有关在线评测系统运行原理及各种报错常因其实不难想象，电脑只是处理数据验证最后答案与期望答案是否相同，大部分的思考都由人来完成
+oj一般有一组input文件和一组output文件，
+先运行你...
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">八月 09, 2022</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2022/08/09/MarkDown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/">MarkDown基本语法阐述</a>
+                                        <p>
+                                            主要内容
+Markdown是什么？谁创造了它？为什么要使用它？怎么使用？谁在用？尝试一下
+正文1. Markdown是什么？Markdown是一种轻量级标记语言，它以纯文本形式(易读、易写、易更改)编写文档，并最终以HTML格式发布。Markdown也可以理解为将以MARKDOWN语法编写的语言转换成HTML内容的工具。    
+2. 谁创造了它？它由Aaron Swartz和John Gr...
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">八月 09, 2022</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2022/08/09/Install-VSC/">有关Visual Studio Code的种草</a>
+                                        <p>
+                                            
+
+
+什么是Visual Studio Code？简介
+Visual Studio Code（简称“VS Code”）是Microsoft在2015年4月30日Build开发者大会上正式宣布一个运行于 Mac OS X、Windows和 Linux 之上的，针对于编写现代Web和云应用的跨平台源代码编辑器 可在桌面上运行，并且可用于Windows，macOS和Linux。它具有对JavaSc...
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">八月 09, 2022</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2022/08/09/code-school/">关于身份证查验生日的事的一些解释</a>
+                                        <p>
+                                            关于身份证查验生日的事的一些解释这连我自己也看不清我写了什么
+1234567891011121314151617181920212223242526272829303132333435363738394041424344454647#include&lt;iostream&gt;#define NOMINMAXusing namespace std;struct Birthday&#123;...
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">八月 09, 2022</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2022/08/09/AC-home/">空调样板房</a>
+                                        <p>
+                                            
+
+邮箱：&#x77;&#x70;&#x70;&#x6f;&#112;&#101;&#119;&#x6f;&#122;&#106;&#x63;&#64;&#111;&#x75;&#116;&#x6c;&#111;&#x6f;&#107;&#46;&#99;&#111;&#x6d;洛谷账号：Jason_Zhou洛谷主页：here鸣谢：yunyoujun&#x2F;云游君 here
+
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">八月 07, 2022</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2022/08/07/hello-world/">Hello World</a>
+                                        <p>
+                                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Qu...
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <ul class="card-category-list" id="aside-cat-list">
-            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/OJ/"><span class="card-category-list-name">OJ</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/cmd/"><span class="card-category-list-name">cmd</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/md/"><span class="card-category-list-name">md</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%9D%91%E6%AD%BB%E4%BA%BA/"><span class="card-category-list-name">坑死人</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0/"><span class="card-category-list-name">学习</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%B5%8B%E8%AF%95/"><span class="card-category-list-name">测试</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%B8%B8%E8%AE%B0/"><span class="card-category-list-name">游记</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%BD%91%E7%AB%99/"><span class="card-category-list-name">网站</span><span class="card-category-list-count">1</span></a></li>
-            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E5%9D%91%E6%AD%BB%E4%BA%BA/" style="font-size: 1.1em; color: #999">坑死人</a> <a href="/tags/%E5%AD%A6%E6%9C%AF/" style="font-size: 1.37em; color: #99a4b2">学术</a> <a href="/tags/%E5%B9%B2%E8%B4%A7/" style="font-size: 1.5em; color: #99a9bf">干货</a> <a href="/tags/%E6%95%85%E5%AE%AB/" style="font-size: 1.1em; color: #999">故宫</a> <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 1.1em; color: #999">测试</a> <a href="/tags/%E7%A9%BA%E8%B0%83/" style="font-size: 1.1em; color: #999">空调</a> <a href="/tags/%E7%BC%96%E7%A8%8B/" style="font-size: 1.23em; color: #999ea6">编程</a> <a href="/tags/%E8%A7%86%E9%A2%91/" style="font-size: 1.1em; color: #999">视频</a> <a href="/tags/%E8%BD%AF%E4%BB%B6/" style="font-size: 1.1em; color: #999">软件</a> <a href="/tags/%E9%A2%98%E8%A7%A3/" style="font-size: 1.1em; color: #999">题解</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/08/"><span class="card-archive-list-date">八月 2022</span><span class="card-archive-list-count">16</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">16</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">17.2k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-08-26T12:47:41.276Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By 神游君</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><canvas class="fireworks" mobile="true"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="400" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
+        </div>
+    </div>
+</div>
+
+    <div id="back-to-top" class="animated fadeIn faster">
+        <div class="flow"></div>
+        <span class="percentage animated fadeIn faster">0%</span>
+        <span class="iconfont icon-top02 animated fadeIn faster"></span>
+    </div>
+</body>
+<footer>
+    <p class="copyright" id="copyright">
+        &copy; 2022
+        <span class="gradient-text">
+            神游君
+        </span>.
+        Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+        Theme
+        <span class="gradient-text">
+            <a href="https://github.com/TriDiamond/hexo-theme-obsidian" title="Obsidian" target="_blank" rel="noopener">Obsidian</a>
+        </span>
+        <small><a href="https://github.com/TriDiamond/hexo-theme-obsidian/blob/master/CHANGELOG.md" title="v1.4.9.3" target="_blank" rel="noopener">v1.4.9.3</a></small>
+        
+        </br>
+        浙ICP备
+        <span class="gradient-text">
+            <a href="https://beian.miit.gov.cn/" title="2022114514号" target="_blank" rel="noopener">2022114514号</a>
+        </span>
+        
+        
+        </br>
+        <span style="display: inline-block;"> <img src=/null></span>
+        
+        <span class="gradient-text">
+            <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44010602009049" title="www.beian.gov.cn&#x2F;portal&#x2F;registerSystemInfo?recordcode&#x3D;44010602009049" target="_blank" rel="noopener">www.beian.gov.cn&#x2F;portal&#x2F;registerSystemInfo?recordcode&#x3D;44010602009049</a>
+        </span>
+        
+    </p>
+</footer>
+
+<script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  MathJax.Hub.Config({
+    "HTML-CSS": {
+      preferredFont: "TeX",
+      availableFonts: ["STIX", "TeX"],
+      linebreaks: {
+        automatic: true
+      },
+      EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+      inlineMath: [
+        ["$", "$"],
+        ["\\(", "\\)"]
+      ],
+      processEscapes: true,
+      ignoreClass: "tex2jax_ignore|dno",
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      noUndefined: {
+        attributes: {
+          mathcolor: "red",
+          mathbackground: "#FFEEEE",
+          mathsize: "90%"
+        }
+      },
+      Macros: {
+        href: "{}"
+      }
+    },
+    messageStyle: "none"
+  });
+</script>
+<script>
+  function initialMathJax() {
+    MathJax.Hub.Queue(function () {
+      var all = MathJax.Hub.getAllJax(),
+        i;
+      // console.log(all);
+      for (i = 0; i < all.length; i += 1) {
+        console.log(all[i].SourceElement().parentNode)
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  }
+
+  function reprocessMathJax() {
+    if (typeof MathJax !== 'undefined') {
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    }
+  }
+</script>
+
+
+ 
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/obsidian.js"></script>
+<script src="/js/jquery.truncate.js"></script>
+<script src="/js/search.js"></script>
+ 
+<script src="//cdn.bootcss.com/typed.js/2.0.10/typed.min.js"></script>
+ 
+<script src="//cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script>
+ 
+<script src="//cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+
+<script src="https://cdn.bootcss.com/codemirror/5.48.4/codemirror.min.js"></script>
+ 
+<script src="//cdn.bootcss.com/codemirror/5.48.4/mode/javascript/javascript.min.js"></script>
+  
+<script src="//cdn.bootcss.com/codemirror/5.48.4/mode/css/css.min.js"></script>
+  
+<script src="//cdn.bootcss.com/codemirror/5.48.4/mode/xml/xml.min.js"></script>
+  
+<script src="//cdn.bootcss.com/codemirror/5.48.4/mode/htmlmixed/htmlmixed.min.js"></script>
+  
+<script src="//cdn.bootcss.com/codemirror/5.48.4/mode/clike/clike.min.js"></script>
+  
+<script src="//cdn.bootcss.com/codemirror/5.48.4/mode/php/php.min.js"></script>
+  
+<script src="//cdn.bootcss.com/codemirror/5.48.4/mode/shell/shell.min.js"></script>
+  
+<script src="//cdn.bootcss.com/codemirror/5.48.4/mode/python/python.min.js"></script>
+   
+<script src="/js/busuanzi.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+    if ($('span[id^="busuanzi_"]').length) {
+      initialBusuanzi();
+    }
+  });
+</script>
+ 
+<link rel="stylesheet" href="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe.min.css">
+<link rel="stylesheet" href="//cdn.bootcss.com/photoswipe/4.1.3/default-skin/default-skin.min.css">
+
+
+<script src="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe.min.js"></script>
+<script src="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+  
+
+<script>
+  function initialTyped() {
+    var typedTextEl = $('.typed-text');
+    if (typedTextEl && typedTextEl.length > 0) {
+      var typed = new Typed('.typed-text', {
+        strings: ['Think like an artist, develop like an artisan', '艺术家思维去思考问题，工匠创造精神去开发'],
+        typeSpeed: 90,
+        loop: true,
+        loopCount: Infinity,
+        backSpeed: 20,
+      });
+    }
+  }
+
+  if ($('.article-header') && $('.article-header').length) {
+    $(document).ready(function () {
+      initialTyped();
+    });
+  }
+</script>
+
+
+
+
+<!-- 引用依赖 -->
+<script>document.write(aplayerconf)</script>
+
+
+
+
+</html>
